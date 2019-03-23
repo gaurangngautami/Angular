@@ -1,0 +1,13 @@
+
+<br>
+<br>
+
+<input type="number" [(ngModel)]="Park_no" class="form-control" placeholder="Enter Your Vehicle Number">
+
+<br>
+<br>
+<button (click)="Park()" class="btn btn-success">PArk it</button>
+
+<br>
+<br>
+<div *ngIf="Show"> Please Note Down Your Parking Slot Is: {{this.Parking_slot}}</div>
