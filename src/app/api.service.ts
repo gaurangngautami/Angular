@@ -40,6 +40,6 @@ export class ApiService {
 
   public Unpark(RNumber: number):Observable<any> {
     let v_reg_no = {rno: RNumber};
-    return this.http.delete('/api/unpark');
+    return this.http.post('/api/unpark',v_reg_no);
   }
 }

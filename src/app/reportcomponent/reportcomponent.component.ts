@@ -9,10 +9,13 @@ export class ReportcomponentComponent implements OnInit{
   constructor(private api:ApiService) { }
  data1:any;
  data2:any;
+ Date1:any;
   ngOnInit() {
     this.api.getData().subscribe(data => {
       this.data1 = data;
       console.log(data);
+      this.Date1 = new Date(this.data1[6].parked_at);
+      console.log(this.data1[6].parked_at);
     });
 
     this.api.getSlotno(1234).subscribe(data =>{
