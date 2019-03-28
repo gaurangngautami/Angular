@@ -44,19 +44,11 @@ function Operation(vno,Response){
               console.log(err)
             }else{
               console.log(rowss[1],"rowssss")
+              var date = new Date(rowss[1].Unparked_at);
+              console.log(date,"final date is shown here");
             }
           });
-          con.query("delete from parked_vehicle where v_reg_no ="+vno+";",function(err,row2){
-            if(err) {
-              console.log(err)
-            }
-            else{
-              // Response.json(rows);
-              console.log("deleted successfully")
-              Response.json(200);
-            }
-
-          })
+          
         }
       })
     })//First Function ends here

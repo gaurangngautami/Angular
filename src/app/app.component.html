@@ -3,11 +3,11 @@
   <h1 style="color:Green">
     Welcome to {{ title }}!
   </h1>
-
-  <a routerLink="/park"><button class="btn btn-success">Park my Vehicle</button></a>
-  <br><br>
-  <a routerLink="/unpark"><button class=" btn btn-success">UnPark my Vehicle</button></a>
-  <br><br>
-  <a routerLink="/park_report"><button class="btn btn-success">Parking report</button></a>
-
+<div class="btn-group">
+  <a routerLink="/park"><button class="btn btn-success btn-block">Park my Vehicle</button></a>
+  <br>
+  <a routerLink="/unpark"><button class=" btn btn-success btn-block">UnPark my Vehicle</button></a>
+  <br>
+  <a routerLink="/park_report"><button class="btn btn-success btn-block">Parking report</button></a>
+</div>
 <router-outlet></router-outlet>
